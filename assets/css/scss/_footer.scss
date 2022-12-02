@@ -1,0 +1,27 @@
+footer {
+  background-color: #fff;
+}
+
+.footer-infos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-info-logo {
+  display: flex;
+  color: $blue-dark !important;
+  img {
+    max-width: 50px;
+  }
+}
+
+.footer-info-social {
+  li {
+    list-style: none;
+  }
+}
+
+.footer-copy {
+  border-top: 1px solid #aaa;
+  padding-top: 1rem;
+}

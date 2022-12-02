@@ -1,0 +1,29 @@
+.bg-hero {
+  background-image: url("./../img/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero {
+  height: 100vh;
+  justify-content: start;
+  @include responsive(s) {
+    justify-content: center;
+  }
+}
+
+.hero-txt {
+  width: 50%;
+  p {
+    margin: 20px 0 40px 0;
+  }
+
+  .btn-sec {
+    margin-left: 1rem;
+  }
+
+  @include responsive(s) {
+    width: 100%;
+  }
+}

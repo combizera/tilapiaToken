@@ -1,0 +1,17 @@
+.bg-about {
+  background-color: $blue-light;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  p {
+    color: $bg-normal;
+    margin: 20px 0 40px 0;
+  }
+
+  .btn-sec {
+    display: -webkit-box;
+  }
+}
