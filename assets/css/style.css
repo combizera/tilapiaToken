@@ -553,7 +553,7 @@ header {
   box-shadow: none;
   position: fixed;
   z-index: 100;
-  background-color: #1b263b;
+  background-color: #778da9;
   transition: 0.3s ease;
 }
 header a {
