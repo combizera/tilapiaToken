@@ -23,10 +23,19 @@
 
   // H3
   @else if $size == h3 and $device == desktop {
-    font-size: 32px;
+    font-size: 40px;
     line-height: 100%;
   } @else if $size == h3 and $device == mobile {
+    font-size: 40px;
+    line-height: 120%;
+  }
+
+  // H4
+  @else if $size == h4 and $device == desktop {
     font-size: 28px;
+    line-height: 100%;
+  } @else if $size == h4 and $device == mobile {
+    font-size: 22px;
     line-height: 120%;
   }
 
@@ -65,7 +74,6 @@
 
 h1 {
   color: #fff;
-  font-weight: 400;
   @include typeface-1(h1, desktop);
   @include responsive(s) {
     @include typeface-1(h1, mobile);
@@ -81,7 +89,7 @@ h2 {
 }
 
 h3 {
-  color: tomato;
+  color: white;
   @include typeface-1(h3, desktop);
   @include responsive(s) {
     @include typeface-1(h3, mobile);
@@ -89,7 +97,7 @@ h3 {
 }
 
 h4 {
-  color: tomato;
+  color: #040718;
   @include typeface-1(h4, desktop);
   @include responsive(s) {
     @include typeface-1(h4, mobile);

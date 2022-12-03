@@ -1,23 +1,40 @@
-footer {
+.bg-footer {
   background-color: #fff;
+}
+
+#footer {
+  display: block;
 }
 
 .footer-infos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 2rem;
 }
 
 .footer-info-logo {
   display: flex;
   color: $blue-dark !important;
   img {
-    max-width: 50px;
+    max-width: 100px;
+    margin-right: 1rem;
   }
 }
 
 .footer-info-social {
+  ul {
+    display: flex;
+    gap: 20px;
+  }
   li {
     list-style: none;
+    transition: 0.3s ease;
+    &:hover {
+      opacity: 0.6;
+    }
+    img {
+      max-width: 25px;
+    }
   }
 }
 

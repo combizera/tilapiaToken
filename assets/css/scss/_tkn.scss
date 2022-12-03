@@ -1,0 +1,40 @@
+.bg-tkn {
+  background-color: #778da9;
+}
+
+.tkn {
+  display: block;
+
+  h2 {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  h4 {
+    margin-bottom: 20px;
+  }
+}
+
+.tkn-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.tkn-item {
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  img {
+    max-width: 230px;
+  }
+
+  p {
+    color: #778da9;
+  }
+}

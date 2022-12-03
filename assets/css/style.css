@@ -137,7 +137,6 @@ a {
 
 h1 {
   color: #fff;
-  font-weight: 400;
   font-family: "Quantico", sans-serif;
   font-size: 48px;
   line-height: 125%;
@@ -165,26 +164,30 @@ h2 {
 }
 
 h3 {
-  color: tomato;
+  color: white;
   font-family: "Quantico", sans-serif;
-  font-size: 32px;
+  font-size: 40px;
   line-height: 100%;
 }
 @media screen and (max-width: 960px) {
   h3 {
     font-family: "Quantico", sans-serif;
-    font-size: 28px;
+    font-size: 40px;
     line-height: 120%;
   }
 }
 
 h4 {
-  color: tomato;
+  color: #040718;
   font-family: "Quantico", sans-serif;
+  font-size: 28px;
+  line-height: 100%;
 }
 @media screen and (max-width: 960px) {
   h4 {
     font-family: "Quantico", sans-serif;
+    font-size: 22px;
+    line-height: 120%;
   }
 }
 
@@ -746,7 +749,7 @@ header a:hover {
 .nav-link-mobile {
   display: inline-block;
   font-family: "Quantico", sans-serif;
-  font-size: 32px;
+  font-size: 40px;
   line-height: 100%;
   color: #1b263b;
   padding: 16px 24px;
@@ -818,13 +821,152 @@ header a:hover {
   display: -webkit-box;
 }
 
-footer {
+.roadmap {
+  display: flex;
+  flex-direction: column;
+}
+.roadmap h2 {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+.timeline ul {
+  list-style: none;
+}
+.timeline li {
+  padding: 20px;
+  background-color: #496e92;
+  color: #fff;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+.timeline li:hover:after {
+  background-color: palevioletred;
+}
+.timeline li:last-child {
+  margin-bottom: 0;
+}
+.timeline li::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: green;
+  border-radius: 50%;
+  top: 0;
+  transition: 0.3s ease;
+}
+
+.timeline-content h3 {
+  margin-bottom: 10px;
+}
+.timeline-content p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+}
+.timeline-content .date {
+  font-size: 13px;
+  font-weight: 200;
+  margin-bottom: 10px;
+  position: absolute;
+  top: -30px;
+  font-family: "Inter", sans-serif;
+  color: #778da9;
+}
+
+@media only screen and (min-width: 960px) {
+  .timeline:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background-color: white;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .timeline li {
+    width: 50%;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  .timeline li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    border-radius: 30px 0 30px 30px;
+  }
+  .timeline li:nth-child(odd)::after {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+  .timeline li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+    border-radius: 0px 30px 30px 30px;
+  }
+  .timeline li:nth-child(even)::after {
+    transform: translate(-50%, -50%);
+    left: -30px;
+  }
+}
+.bg-tkn {
+  background-color: #778da9;
+}
+
+.tkn {
+  display: block;
+}
+.tkn h2 {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.tkn h4 {
+  margin-bottom: 20px;
+}
+
+.tkn-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.tkn-item {
   background-color: #fff;
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.tkn-item img {
+  max-width: 230px;
+}
+.tkn-item p {
+  color: #778da9;
+}
+
+.bg-footer {
+  background-color: #fff;
+}
+
+#footer {
+  display: block;
 }
 
 .footer-infos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 2rem;
 }
 
 .footer-info-logo {
@@ -832,11 +974,23 @@ footer {
   color: #1b263b !important;
 }
 .footer-info-logo img {
-  max-width: 50px;
+  max-width: 100px;
+  margin-right: 1rem;
 }
 
+.footer-info-social ul {
+  display: flex;
+  gap: 20px;
+}
 .footer-info-social li {
   list-style: none;
+  transition: 0.3s ease;
+}
+.footer-info-social li:hover {
+  opacity: 0.6;
+}
+.footer-info-social li img {
+  max-width: 25px;
 }
 
 .footer-copy {
