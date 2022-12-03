@@ -152,7 +152,7 @@ h1 {
 h2 {
   color: #1b263b;
   font-family: "Quantico", sans-serif;
-  font-size: 40px;
+  font-size: 48px;
   line-height: 120%;
 }
 @media screen and (max-width: 960px) {
@@ -926,7 +926,7 @@ header a:hover {
   display: block;
 }
 .tkn h2 {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   text-align: center;
 }
 .tkn h4 {
@@ -953,6 +953,74 @@ header a:hover {
 }
 .tkn-item p {
   color: #778da9;
+}
+
+.bg-team {
+  background-color: #369559;
+}
+
+.team {
+  display: block;
+}
+.team h2 {
+  margin-bottom: 60px;
+  text-align: center;
+}
+.team h4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.team-item {
+  background-color: #fff;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.team-item img {
+  max-width: 100%;
+}
+.team-item .team-item-txt {
+  padding: 20px;
+}
+.team-item .team-item-txt span {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #0081ff;
+  padding-bottom: 0.5rem;
+  display: block;
+  text-align: center;
+}
+.team-item .team-item-txt p {
+  color: #778da9;
+}
+.team-item .team-item-txt .team-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.team-item .team-item-txt ul {
+  list-style: none;
+  display: flex;
+}
+.team-item .team-item-txt li {
+  transition: 0.3s ease;
+}
+.team-item .team-item-txt li:hover {
+  opacity: 0.6;
+}
+.team-item .team-item-txt img {
+  max-width: 25px;
+  margin-left: 1rem;
 }
 
 .bg-footer {
