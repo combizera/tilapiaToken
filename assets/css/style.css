@@ -23,7 +23,7 @@ a {
   transition: 0.5s ease;
 }
 .btn:hover {
-  transform: scale(1.05);
+  transform: scale(1.025);
 }
 
 .btn-pri {
@@ -1023,6 +1023,21 @@ header a:hover {
   margin-left: 1rem;
 }
 
+.bg-wp {
+  background-color: #778da9;
+}
+
+.wp {
+  flex-direction: column;
+}
+.wp p {
+  margin: 20px 0 40px 0;
+  color: #fff;
+}
+.wp .btn-pri {
+  margin-left: 1rem;
+}
+
 .bg-footer {
   background-color: #fff;
 }
@@ -1034,6 +1049,7 @@ header a:hover {
 .footer-infos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
   padding-bottom: 2rem;
 }
 
