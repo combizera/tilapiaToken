@@ -986,7 +986,10 @@ header a:hover {
 }
 
 .bg-team {
-  background-color: #369559;
+  background-color: #040718;
+  background-image: url("./../img/svg/pattern-tilapia.svg");
+  background-position-x: -100px;
+  background-position-y: -100px;
 }
 
 .team {
@@ -995,6 +998,7 @@ header a:hover {
 .team h2 {
   margin-bottom: 60px;
   text-align: center;
+  color: #fff;
 }
 .team h4 {
   margin-bottom: 20px;
@@ -1063,6 +1067,8 @@ header a:hover {
 .wp p {
   margin: 20px 0 40px 0;
   color: #fff;
+  text-align: center;
+  font-weight: 200;
 }
 .wp .btn-pri {
   margin-left: 1rem;
@@ -1109,7 +1115,10 @@ header a:hover {
 
 .footer-copy {
   border-top: 1px solid #aaa;
-  padding-top: 1rem;
+  padding-top: 2rem;
+  font-size: 14px;
+  font-weight: 300;
+  color: #333;
 }
 
 html {
